@@ -41,15 +41,6 @@ function Spinner() {
   );
 }
 
-function loadImageDataURL(file, callback) {
-  const reader = new FileReader();
-  reader.addEventListener("load", (e) => {
-    const data = e.target.result;
-    callback(data);
-  });
-  reader.readAsDataURL(file);
-}
-
 function loadImageBlob(file, callback) {
   const reader = new FileReader();
   reader.addEventListener("load", (e) => {
